@@ -1,9 +1,11 @@
 # 📚 Spring Boot를 이용한 멀티모듈 설계
 
-
+<br/>
 
 ##  ✅ 개요
 신규 프로젝트 진행 시 빠르게 멀티모듈 환경을 적용하기 위해 Spring Boot를 이용한 멀티모듈 구조를 설계함
+
+<br/><br/>
 
 
 ## 🖥 개발 환경
@@ -13,9 +15,10 @@
  - Spring Data JPA
  - Querydsl
  - JUnit 5
- - Spring REST DOCS
+ - Spring REST Docs
  - Thymeleaf
 
+<br/><br/>
 
 ## 📜 프로젝트 구조
 
@@ -31,6 +34,42 @@ temo-project
     ├── temo-security            --> 스프링 시큐리티 설정 모듈
     └── temo-web-thymeleaf       --> 타임리프 모듈
 ```
+
+### 모듈 간 관계
+![image](https://user-images.githubusercontent.com/61148082/147764691-34911f26-06f3-474a-ad41-3732f586fc42.png)
+
+<br/><br/>
+
+
+## 애플리케이션 실행
+### [Intellij]
+소스 Clone 후 temo-application 모듈에 존재하는 TemoApplication main 메서드 실행
+
+### [bootJar]
+Gradle BootJar Task 실행 후 temo-application/build/libs에 빌드된 jar를 터미널에서 실행
+```
+java -jar temo-application-1.0-SNAPSHOT.jar
+```
+
+<br/><br/>
+## 📑 비고
+
+### Spring REST Docs
+> Spring REST Docs는 REST 아키텍처 중 Self-descriptive message를 달성하기 위해 Spring에서 지원하는 프로젝트입니다.
+> 
+> 테스트 코드로 작성된 REST Docs는 HTTP Response를 통해 클라이언트에게 전달 됩니다.
+
+<br/><br/>
+### Querydsl
+> Querydsl 정적 타입을 이용해서 SQL과 같은 쿼리를 생성할 수 있도록 해 주는 프레임워크입니다.
+>
+> Gradle Task 중 compileQuerydsl를 통해 Entity를 Q타입으로 변환할 수 있습니다.
+
+<br/><br/>
+
+
+
+
 
 
 ## 📌 Reference
