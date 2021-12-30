@@ -19,7 +19,7 @@
    - Spring HATEOAS
    - JUnit 5
    - Thymeleaf
- - Querydsl
+ - Querydsl 4.4.0
  - H2 2.0.202
 
 <br/><br/>
