@@ -12,11 +12,15 @@
  - Java 11
  - Gradle 6.9
  - Spring Boot 2.5.8
- - Spring Data JPA
+   - Spring Web
+   - Spring Data JPA
+   - Spring Security
+   - Spring REST Docs
+   - Spring HATEOAS
+   - JUnit 5
+   - Thymeleaf
  - Querydsl
- - JUnit 5
- - Spring REST Docs
- - Thymeleaf
+ - H2 2.0.202
 
 <br/><br/>
 
@@ -37,11 +41,11 @@ temo-project
 
 ### 모듈 간 관계
 ![image](https://user-images.githubusercontent.com/61148082/147764691-34911f26-06f3-474a-ad41-3732f586fc42.png)
-
+- 해당 이미지의 의존성은 현재 프로젝트에 적용된 의존성일뿐, 의존성을 추가하거나 삭제하는 것은 사용자가 원하는대로 변경 가능
 <br/><br/>
 
 
-## 애플리케이션 실행
+## 🔄 애플리케이션 실행
 ### [Intellij]
 소스 Clone 후 temo-application 모듈에 존재하는 TemoApplication main 메서드 실행
 
@@ -53,22 +57,10 @@ java -jar temo-application-1.0-SNAPSHOT.jar
 
 <br/><br/>
 ## 📑 비고
-
-### Spring REST Docs
-> Spring REST Docs는 REST 아키텍처 중 Self-descriptive message를 달성하기 위해 Spring에서 지원하는 프로젝트입니다.
-> 
-> 테스트 코드로 작성된 REST Docs는 HTTP Response를 통해 클라이언트에게 전달 됩니다.
-
-<br/><br/>
-### Querydsl
-> Querydsl 정적 타입을 이용해서 SQL과 같은 쿼리를 생성할 수 있도록 해 주는 프레임워크입니다.
->
-> Gradle Task 중 compileQuerydsl를 통해 Entity를 Q타입으로 변환할 수 있습니다.
-
-<br/><br/>
+### Spring REST Docs와 Querydsl 설정은 temo-internal-api 모듈에 Example 코드 참조
 
 
-
+<br/>
 
 
 
