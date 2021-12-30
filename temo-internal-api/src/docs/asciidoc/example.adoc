@@ -1,0 +1,24 @@
+= API Document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:operation-curl-request-title: Example request
+:operation-http-response-title: Example response
+
+[[introduction]]
+=== 소개
+
+
+Example REST DOCS
+
+[[example-api]]
+=== Example API
+
+include::{snippets}/get-example/curl-request.adoc[]
+
+operation::get-example[snippets='curl-request,http-response']
+
+

@@ -1,0 +1,34 @@
+buildscript {
+    ext {
+        springBootVersion = '2.5.8'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.11.RELEASE"
+    }
+}
+
+allprojects {
+
+}
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    sourceCompatibility = 11
+
+    group 'org.temo'
+    version '1.0-SNAPSHOT'
+
+    test {
+        useJUnitPlatform()
+    }
+}

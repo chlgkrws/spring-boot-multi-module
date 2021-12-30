@@ -1,0 +1,8 @@
+rootProject.name = 'temo'
+
+include 'temo-application'
+include 'temo-core'
+include 'temo-internal-api'
+include 'temo-security'
+include 'temo-web-thymeleaf'
+
